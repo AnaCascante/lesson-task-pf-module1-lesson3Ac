@@ -36,7 +36,7 @@ if (maximumIncome >=13.075){
 
 var colour = "blue";
 
-if (colour = "orange") {
+if (colour === "orange") {
     console.log("This colour is a bit rubbish");
 } else {
     console.log ("I love this colour")
@@ -44,7 +44,7 @@ if (colour = "orange") {
 
 // Question 5 Given the following variable: write code that logs the message "Not paid" if the invoice has not been paid.
 
-var invoicePaid = true;
+var invoicePaid = false;
 if (invoicePaid === false){
     console.log ("Not paid")
 }
@@ -66,30 +66,32 @@ if (selectedNumber!==15) {
 // If the dayOfTheWeek is not a number between 1 and 7, log the message "Invalid day number".
 
 var dayOfTheWeek = 3;
+var dayName; 
 
 switch (dayOfTheWeek) {
     case 1: 
-        dayOfTheWeek = "Monday";
-        break
+        dayName = "Monday";
+        break;
     case 2: 
-        dayOfTheWeek = "Tuesday";
-        break
+        dayName = "Tuesday";
+        break;
     case 3: 
-        dayOfTheWeek = "Wednesday";
-        break
+        dayName = "Wednesday";
+        break;
     case 4: 
-        dayOfTheWeek = "Thursday";
-        break
+        dayName= "Thursday";
+        break;
     case 5: 
-        dayOfTheWeek = "Friday";
-        break
+        dayName= "Friday";
+        break;
     case 6: 
-        dayOfTheWeek = "Saturday";
-        break
+        dayName= "Saturday";
+        break;
     case 7: 
-        dayOfTheWeek = "Sunday";
-        break
+        dayName= "Sunday";
+        break;
     default: 
-        dayOfTheWeek = "Invalid day number";
+        dayName = "Invalid day number";
+        break;
     }
 console.log (dayOfTheWeek)
